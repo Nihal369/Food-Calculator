@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Food Calculator</string>
+    <string name="total_fund">Total Fund</string>
+    <string name="placeholder_num">888</string>
+    <string name="remaining_fund">Remaining Fund</string>
+    <string name="record_expense">Record Expense</string>
+</resources>
