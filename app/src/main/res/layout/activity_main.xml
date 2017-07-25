@@ -8,6 +8,7 @@
     tools:context="com.lmntrx.foodcalculator.MainActivity">
 
     <TextView
+        android:id="@+id/recordExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/record_expense"
@@ -22,7 +23,7 @@
         app:layout_constraintVertical_bias="0.631" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/remainingFund"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/remaining_fund"
@@ -37,7 +38,7 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/totalFund"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/total_fund"
@@ -52,10 +53,10 @@
         app:layout_constraintVertical_bias="0.094" />
 
     <TextView
-        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/placeholder_num"
+        android:id="@+id/remainingFundNum"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#000"
         android:textSize="30sp"
@@ -67,7 +68,7 @@
         app:layout_constraintVertical_bias="0.473" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/totalFundNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/placeholder_num"
@@ -80,5 +81,32 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.197" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="recordExpense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        />
 
 </android.support.constraint.ConstraintLayout>
